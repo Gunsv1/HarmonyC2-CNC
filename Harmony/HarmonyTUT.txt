@@ -1,0 +1,58 @@
+CONTACT ME OR JOIN THE SERVER BELOW.
+   Instagram : @jackr_uk
+   Discord : gunszz
+   Discord Server : https://discord.gg/gunsserv
+   Telegram Server : https://t.me/gunsvirus
+   Telegram:https://t.me/Gunsv1	
+
+
+[ MAKE SURE YOU'RE USING UBUNTU 22.04 ]
+
+Copy these lines below.
+
+sudo apt update && apt upgrade -y
+sudo apt install mysql-server
+sudo systemctl start mysql.service
+mysql_secure_installation
+
+sudo mysql
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Guns1212';  make sure it matches your config.js file
+exit
+
+2. mysql -u root -pGuns1212
+
+3. Once You Have Signed In, Copy and Paste These Commands
+
+  CREATE DATABASE `HarmonyCNC`;
+  CREATE USER 'Guns'@'localhost' IDENTIFIED BY 'Guns1212';
+  GRANT ALL PRIVILEGES ON * . * TO 'Guns'@'localhost';
+  FLUSH PRIVILEGES;
+  exit
+
+Tip : Change The Information Above and Match It With /config.json For A Secure Database!
+
+Extra Help :
+
+1. apt install screen
+
+2. Run These Commands Below
+
+chmod 777 *
+sudo screen ./harmony
+
+
+Connect Using "SSH"
+
+Make Sure To Look at Your Default Login... It Will Be What You Use To Make Your First Login.
+
+
+
+
+
+
+
+
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+
+   	

